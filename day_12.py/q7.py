@@ -5,7 +5,7 @@ import bisect
 
 def example_c(arr, queries): 
 
-    sorted_arr = sorted(arr)          # O(n log n) 
+    sorted_arr = sorted(arr)         
 
     for q in queries:                 # O(q) — q queries 
 

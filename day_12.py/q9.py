@@ -33,15 +33,15 @@ def linear_search_verbose(arr, target):
 
   
 
-data = list(range(1, 101))   # [1, 2, 3, ..., 100] 
+data = list(range(1, 101))   
 
   
 
-print(linear_search_verbose(data, 1))   # Best case: 1 step 
+print(linear_search_verbose(data, 1))   
 
-print(linear_search_verbose(data, 50))  # Average: 50 steps 
+print(linear_search_verbose(data, 50))  
 
-print(linear_search_verbose(data, 100)) # Worst: 100 steps 
+print(linear_search_verbose(data, 100)) 
 
-print(linear_search_verbose(data, 999)) # Not found: 100 steps 
+print(linear_search_verbose(data, 999)) 
 

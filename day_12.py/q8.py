@@ -11,27 +11,23 @@ def linear_search(arr, target):
 
     """ 
 
-    for index in range(len(arr)):     # visit each element 
+    for index in range(len(arr)):     
 
-        if arr[index] == target:       # found it! 
+        if arr[index] == target:       
 
             return index 
 
-    return -1                          # exhausted all elements 
-
-  
-
-# Test cases 
+    return -1                    
 
 numbers = [64, 34, 25, 12, 22, 11, 90] 
 
   
 
-print(linear_search(numbers, 22))   # → 4 (found at index 4) 
+print(linear_search(numbers, 22))   
 
-print(linear_search(numbers, 100))  # → -1 (not found) 
+print(linear_search(numbers, 100))  
 
-print(linear_search(numbers, 64))   # → 0 (found at start — best case!) 
+print(linear_search(numbers, 64))   
 
-print(linear_search(numbers, 90))   # → 6 (found at end — worst case!) 
+print(linear_search(numbers, 90))    
 

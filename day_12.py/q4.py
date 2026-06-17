@@ -1,8 +1,6 @@
 
 import math 
 
-  
-
 def binary_search(sorted_arr, target): 
 
     """Search a SORTED array. O(log n) time, O(1) space.""" 
@@ -11,15 +9,11 @@ def binary_search(sorted_arr, target):
 
     steps = 0 
 
-  
-
     while low <= high: 
 
         steps += 1 
 
-        mid = (low + high) // 2          # find middle index 
-
-  
+        mid = (low + high) // 2      
 
         if sorted_arr[mid] == target: 
 
@@ -29,31 +23,21 @@ def binary_search(sorted_arr, target):
 
         elif sorted_arr[mid] < target: 
 
-            low = mid + 1                # discard LEFT half 
+            low = mid + 1                 
 
         else: 
 
-            high = mid - 1               # discard RIGHT half 
+            high = mid - 1               
 
   
+    return -1   
 
-    return -1   # not found 
 
-  
+data = list(range(0, 1_000_000, 2))  
 
-# Demo 
+binary_search(data, 999_998)        
 
-data = list(range(0, 1_000_000, 2))    # 500,000 even numbers 
-
-binary_search(data, 999_998)           # Found in 19 steps! 
-
-# Linear search would take up to 500,000 steps! 
-
-  
-
-# Power of halving: 
 
 for n in [10, 100, 1000, 1_000_000]: 
 
     print(f'n={n:>10,}  max steps needed = {math.ceil(math.log2(n))}') 
-

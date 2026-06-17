@@ -20,15 +20,12 @@ def sum_of_n(n):
 
 print(sum_of_n(1_000_000))  
 
-  
-
-# 4. Stack operations 
 
 stack = [] 
 
-stack.append(10)    # O(1) push 
+stack.append(10)  
 
 stack.append(20) 
 
-top = stack.pop()   # O(1) pop → returns 20 
+top = stack.pop()  
 

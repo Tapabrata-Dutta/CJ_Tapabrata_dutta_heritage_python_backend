@@ -1,14 +1,13 @@
 
 def example_a(arr): 
 
-    # Step 1: Loop 1 
 
-    for x in arr:          # O(n) 
+    for x in arr:          
 
         print(x) 
 
 
-    for x in arr:          # O(n) 
+    for x in arr:         
 
         print(x * 2) 
 

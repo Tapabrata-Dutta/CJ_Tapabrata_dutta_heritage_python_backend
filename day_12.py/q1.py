@@ -17,9 +17,6 @@ def measure(fn, sizes):
 
         print(f'n={n:>8,}  →  {elapsed:8.3f} ms') 
 
-  
-
-# O(n) function 
 
 def linear(arr): 
 
@@ -28,10 +25,6 @@ def linear(arr):
     for x in arr: total += x 
 
     return total 
-
-  
-
-# O(n²) function 
 
 def quadratic(arr): 
 

@@ -69,19 +69,15 @@ students = [
 
     {'roll': 106, 'name': 'Deepika', 'grade': 84}, 
 
-] 
-
-  
+]  
 
 gf = GradeFinder(students) 
 
-  
+print(gf.find_by_name('priya'))    
 
-print(gf.find_by_name('priya'))         # {'roll':102, 'name':'Priya', 'grade':95} 
+print(gf.find_by_roll(104))             
 
-print(gf.find_by_roll(104))             # Sneha, 91 
+print(gf.find_above_grade(85))          
 
-print(gf.find_above_grade(85))          # Arjun(88), Priya(95), Sneha(91) 
-
-print(gf.find_topper())                 # Priya with 95 
+print(gf.find_topper())                 
 
