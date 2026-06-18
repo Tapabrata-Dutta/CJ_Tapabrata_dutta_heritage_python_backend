@@ -1,0 +1,49 @@
+N = 4
+
+board = [["." for _ in range(N)] for _ in range(N)]
+
+def is_safe(row, col):
+
+    for i in range(row):
+        if board[i][col] == "Q":
+            return False
+
+    i = row - 1
+    j = col - 1
+
+    while i >= 0 and j >= 0:
+        if board[i][j] == "Q":
+            return False
+        i -= 1
+        j -= 1
+
+    i = row - 1
+    j = col + 1
+
+    while i >= 0 and j < N:
+        if board[i][j] == "Q":
+            return False
+        i -= 1
+        j += 1
+
+    return True
+
+def solve(row):
+
+    if row == N:
+        for r in board:
+            print(" ".join(r))
+        return True
+
+    for col in range(N):
+        if is_safe(row, col):
+            board[row][col] = "Q"
+
+            if solve(row + 1):
+                return True
+
+            board[row][col] = "."
+
+    return False
+
+solve(0)
