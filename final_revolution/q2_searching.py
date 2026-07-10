@@ -85,3 +85,19 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+"""
+tapabratadutta@TAPABRATAs-MacBook-Air Intern_program % python3 /Users/tapabratadutta/Intern_program/final_revolution/q2_searching.py
+Sample Unsorted List (Length 11): [42, 7, 19, 99, 12, 54, 33, 8, 90, 21, 65]
+
+--- Testing Linear Search (on Unsorted List) ---
+Target '33' found at index 6.
+Target '100' was not found in the list (returned -1).
+
+Sample Sorted List (for Binary Search): [7, 8, 12, 19, 21, 33, 42, 54, 65, 90, 99]
+
+--- Testing Binary Search (on Sorted List) ---
+Target '33' found at index 5 in the sorted list.
+Target '100' was not found in the sorted list (returned -1).
+"""

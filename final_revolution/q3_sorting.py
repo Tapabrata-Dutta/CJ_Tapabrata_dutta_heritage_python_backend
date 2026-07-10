@@ -205,3 +205,79 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+"""
+tapabratadutta@TAPABRATAs-MacBook-Air Intern_program % python3 /Users/tapabratadutta/Intern_program/final_revolution/q3_sorting.py
+--- Original Sample List (Length 8): [29, 10, 14, 37, 13, 2, 8, 25] ---
+
+==============================================
+                1. BUBBLE SORT                
+==============================================
+Initial: [29, 10, 14, 37, 13, 2, 8, 25]
+Pass 1: [10, 14, 29, 13, 2, 8, 25, 37]
+Pass 2: [10, 14, 13, 2, 8, 25, 29, 37]
+Pass 3: [10, 13, 2, 8, 14, 25, 29, 37]
+Pass 4: [10, 2, 8, 13, 14, 25, 29, 37]
+Pass 5: [2, 8, 10, 13, 14, 25, 29, 37]
+Pass 6: [2, 8, 10, 13, 14, 25, 29, 37]
+No swaps occurred. Early termination.
+
+==============================================
+               2. SELECTION SORT              
+==============================================
+Initial: [29, 10, 14, 37, 13, 2, 8, 25]
+Pass 1 (swapped index 0 and 5): [2, 10, 14, 37, 13, 29, 8, 25]
+Pass 2 (swapped index 1 and 6): [2, 8, 14, 37, 13, 29, 10, 25]
+Pass 3 (swapped index 2 and 6): [2, 8, 10, 37, 13, 29, 14, 25]
+Pass 4 (swapped index 3 and 4): [2, 8, 10, 13, 37, 29, 14, 25]
+Pass 5 (swapped index 4 and 6): [2, 8, 10, 13, 14, 29, 37, 25]
+Pass 6 (swapped index 5 and 7): [2, 8, 10, 13, 14, 25, 37, 29]
+Pass 7 (swapped index 6 and 7): [2, 8, 10, 13, 14, 25, 29, 37]
+
+==============================================
+               3. INSERTION SORT              
+==============================================
+Initial: [29, 10, 14, 37, 13, 2, 8, 25]
+Step 1 (inserted 10): [10, 29, 14, 37, 13, 2, 8, 25]
+Step 2 (inserted 14): [10, 14, 29, 37, 13, 2, 8, 25]
+Step 3 (inserted 37): [10, 14, 29, 37, 13, 2, 8, 25]
+Step 4 (inserted 13): [10, 13, 14, 29, 37, 2, 8, 25]
+Step 5 (inserted 2): [2, 10, 13, 14, 29, 37, 8, 25]
+Step 6 (inserted 8): [2, 8, 10, 13, 14, 29, 37, 25]
+Step 7 (inserted 25): [2, 8, 10, 13, 14, 25, 29, 37]
+
+==============================================
+                 4. MERGE SORT                
+==============================================
+Initial: [29, 10, 14, 37, 13, 2, 8, 25]
+    Merged: [29] and [10] -> [10, 29]
+    Merged: [14] and [37] -> [14, 37]
+  Merged: [10, 29] and [14, 37] -> [10, 14, 29, 37]
+    Merged: [13] and [2] -> [2, 13]
+    Merged: [8] and [25] -> [8, 25]
+  Merged: [2, 13] and [8, 25] -> [2, 8, 13, 25]
+Merged: [10, 14, 29, 37] and [2, 8, 13, 25] -> [2, 8, 10, 13, 14, 25, 29, 37]
+
+==============================================
+                 5. QUICK SORT                
+==============================================
+Initial: [29, 10, 14, 37, 13, 2, 8, 25]
+Partition (Pivot=13): Left=[10, 2, 8], Mid=[13], Right=[29, 14, 37, 25]
+  Partition (Pivot=2): Left=[], Mid=[2], Right=[10, 8]
+    Partition (Pivot=8): Left=[], Mid=[8], Right=[10]
+  Partition (Pivot=37): Left=[29, 14, 25], Mid=[37], Right=[]
+    Partition (Pivot=14): Left=[], Mid=[14], Right=[29, 25]
+      Partition (Pivot=25): Left=[], Mid=[25], Right=[29]
+Final Sorted Output: [2, 8, 10, 13, 14, 25, 29, 37]
+
+==============================================
+                VERIFICATION                  
+==============================================
+Bubble Sort     | Correct? True | Result: [2, 8, 10, 13, 14, 25, 29, 37]
+Selection Sort  | Correct? True | Result: [2, 8, 10, 13, 14, 25, 29, 37]
+Insertion Sort  | Correct? True | Result: [2, 8, 10, 13, 14, 25, 29, 37]
+Merge Sort      | Correct? True | Result: [2, 8, 10, 13, 14, 25, 29, 37]
+Quick Sort      | Correct? True | Result: [2, 8, 10, 13, 14, 25, 29, 37]
+
+[SUCCESS] All 5 sorting algorithms produced the same correctly sorted list!
+"""

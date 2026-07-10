@@ -184,3 +184,45 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+"""
+tapabratadutta@TAPABRATAs-MacBook-Air Intern_program % python3 /Users/tapabratadutta/Intern_program/final_revolution/q5_bst.py
+==========================================================
+                 Binary Search Tree (BST)                 
+==========================================================
+Building BST by inserting: [50, 30, 70, 20, 40, 60, 80, 35]
+
+--- Traversals BEFORE Deletion ---
+  In-order:   [20, 30, 35, 40, 50, 60, 70, 80]
+  Pre-order:  [50, 30, 20, 40, 35, 70, 60, 80]
+  Post-order: [20, 35, 40, 30, 60, 80, 70, 50]
+
+--- Search Demonstration ---
+  Search for 40: Found
+  Search for 99: Not Found
+  Search for 50: Found
+  Search for 15: Not Found
+
+--- Deletion Case 2: Delete Node with One Child (40) ---
+
+--- Traversals AFTER Deleting 40 ---
+  In-order:   [20, 30, 35, 50, 60, 70, 80]
+  Pre-order:  [50, 30, 20, 35, 70, 60, 80]
+  Post-order: [20, 35, 30, 60, 80, 70, 50]
+
+--- Deletion Case 1: Delete Leaf Node (35) ---
+
+--- Traversals AFTER Deleting 35 ---
+  In-order:   [20, 30, 50, 60, 70, 80]
+  Pre-order:  [50, 30, 20, 70, 60, 80]
+  Post-order: [20, 30, 60, 80, 70, 50]
+
+--- Deletion Case 3: Delete Node with Two Children (Root: 50) ---
+
+--- Traversals AFTER Deleting Root 50 ---
+  In-order:   [20, 30, 60, 70, 80]
+  Pre-order:  [60, 30, 20, 70, 80]
+  Post-order: [20, 30, 80, 70, 60]
+tapabratadutta@TAPABRATAs-MacBook-Air Intern_program % 
+"""

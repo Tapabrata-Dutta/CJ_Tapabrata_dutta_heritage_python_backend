@@ -150,3 +150,42 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+"""
+tapabratadutta@TAPABRATAs-MacBook-Air Intern_program % python3 /Users/tapabratadutta/Intern_program/final_revolution/q4_stack_queue.py
+==========================================================
+         PART A: Balanced Parentheses Checker             
+==========================================================
+Running bracket checker on test strings:
+  String: ()           | Balanced? True
+  String: ({[]})       | Balanced? True
+  String: ()[]{}       | Balanced? True
+  String: (]           | Balanced? False
+  String: ([)]         | Balanced? False
+  String: (((({}))))   | Balanced? True
+  String: ({[}         | Balanced? False
+  String: [            | Balanced? False
+
+==========================================================
+             PART B: Ticket Counter Simulation            
+==========================================================
+Initial Queue State: []
+
+--- Customers Arriving and Enqueueing ---
+  [Enqueue] Alice    joined the line. Current Queue: ['Alice']
+  [Enqueue] Bob      joined the line. Current Queue: ['Alice', 'Bob']
+  [Enqueue] Charlie  joined the line. Current Queue: ['Alice', 'Bob', 'Charlie']
+  [Enqueue] David    joined the line. Current Queue: ['Alice', 'Bob', 'Charlie', 'David']
+  [Enqueue] Eve      joined the line. Current Queue: ['Alice', 'Bob', 'Charlie', 'David', 'Eve']
+
+--- Serving Customers (Dequeueing) ---
+  [Dequeue] Alice    was served.  Current Queue: ['Bob', 'Charlie', 'David', 'Eve']
+  [Dequeue] Bob      was served.  Current Queue: ['Charlie', 'David', 'Eve']
+  [Dequeue] Charlie  was served.  Current Queue: ['David', 'Eve']
+  [Dequeue] David    was served.  Current Queue: ['Eve']
+  [Dequeue] Eve      was served.  Current Queue: []
+
+Ticket line simulation complete. Queue is empty.
+tapabratadutta@TAPABRATAs-MacBook-Air Intern_program % 
+"""

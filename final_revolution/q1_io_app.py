@@ -100,3 +100,31 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+"""""
+tapabratadutta@TAPABRATAs-MacBook-Air Intern_program % python3 /Users/tapabratadutta/Intern_program/final_revolution/q1_io_app.py
+
+==============================
+    Console-Based Mini App    
+==============================
+1. BMI Calculator
+2. Age Finder
+3. Exit
+Select an option (1-3): 1
+
+--- BMI Calculator ---
+Enter your weight in kg (e.g., 70): 65
+Enter your height in meters (e.g., 1.75): 1.76
+
+[Result] Your BMI is: 20.98
+[Category] Normal
+
+==============================
+    Console-Based Mini App    
+==============================
+1. BMI Calculator
+2. Age Finder
+3. Exit
+Select an option (1-3): 
+"""
